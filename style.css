@@ -4,12 +4,9 @@
     padding: 0;
     margin: 0;
 }
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-} */
+body {
+    background-image: linear-gradient(to right,#bdc3c7 , #2c3e50);
+}
 .main {
     display: flex;
     justify-content: center;
@@ -20,73 +17,75 @@
     padding: 10px;
     margin-top: 50px;
 }
-.buttons {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(4 , 100px);
-    grid-template-rows: repeat(4 , 50px);
-    grid-gap: 5px;
-    text-align: center;
-}
-.btn {
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    font-size: 20px;
-    /* margin: 8px;
-    text-align: center; */
 
-}
-.btn:hover {
-    background-color: gainsboro;
-    cursor: pointer;
-}
-.btn:active {
-    background-color: tomato;
-}
 .calculator{
     width: 400px;
     border: 2px black solid;
     border-radius: 15px;
     padding: 20px;
-    background-color: #aaa;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
 .calculator-container {
     border: 2px solid black;
     border-radius: 10px;
     bottom: 5px;
-    width: 370px;
+    width: 390px;
     position: relative;
     padding: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    background-color:gainsboro;
+    background-color:transparent;
+    color: white;
+    font-family: cursive;
+}
+.buttons {
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: repeat(4 , 100px);
+    grid-template-rows: repeat(4 , 70px);
+    grid-gap: 5px;
+    text-align: center;
+}
+.btn {
+    padding: 26px;
+    /* border: 1px solid #9f6e6e; */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    box-shadow: rgb(249 249 249 / 15%) 2.4px 2.4px 3.2px;
+    color: white;
+}
+.btn:hover {
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: tomato;
 }
 .calc-buttons {
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     position: relative;
-    left: 150px;
+    left: 96px;
     top: 10px;
     grid-gap: 5px;
 }
-#clear-btn{
+#clear-btn , #delete {
     background-color: tomato;
-
-}
-#delete {
-    background-color: aquamarine;
-    
+    font-family: cursive;
 }
 .foot {
     position:absolute;
-    bottom: 0;
+    bottom: 25px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -96,3 +95,4 @@
     font-size: 20px;
 
 }
+

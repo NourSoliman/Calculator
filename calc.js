@@ -45,9 +45,11 @@ function appendNumbers(number){
     }
     currentOperand.textContent += number;
 }
+//function to reset screen
 function resetScreen() { 
     currentOperand.textContent = ``;
 }
+//clear button function
 clearBtn.addEventListener(`click` , clear);
 function clear() { 
     currentOperand.textContent = `0`;
