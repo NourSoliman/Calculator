@@ -85,7 +85,7 @@ body {
 }
 .foot {
     position:absolute;
-    bottom: 25px;
+    bottom: 0;
     left: 0;
     display: flex;
     justify-content: center;
@@ -93,6 +93,23 @@ body {
     width: 100%;
     font-family:"Big Shoulders Stencil Text", cursive;
     font-size: 20px;
+}
+/*media query*/
+@media  (max-width:480px) and (min-width:378px) {
 
+    .calculator {
+        width: 360px;
+    }
+    .calculator-container {
+        width: 350px;
+    }
+    .buttons {
+        grid-template-columns: repeat(4 , 90px);
+        grid-template-rows: repeat(4 , 60px);
+    }
+    .calc-buttons {
+        left: 75px;
+        top: 2px;
+    }
 }
 
