@@ -95,21 +95,21 @@ body {
     font-size: 20px;
 }
 /*media query*/
-@media  (max-width:480px) and (min-width:378px) {
+@media  (max-width:477px) and (min-width:375px) {
 
     .calculator {
-        width: 360px;
+        width: fit-content;
     }
     .calculator-container {
-        width: 350px;
+        width: 293px;
     }
     .buttons {
-        grid-template-columns: repeat(4 , 90px);
-        grid-template-rows: repeat(4 , 60px);
+        grid-template-columns: repeat(4 , 75px);
+        grid-template-rows: repeat(4 , 70px);
     }
     .calc-buttons {
-        left: 75px;
-        top: 2px;
+        left: 58px;
+        top: 6px;
     }
 }
 
