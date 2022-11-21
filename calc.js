@@ -62,6 +62,7 @@ function appendOperator(operator) {
     currentOperation = operator
     previousOperand.textContent = `${firstNumber} ${currentOperation}`
     currentOperand.textContent = ``;
+    console.log(`clicked`);
 }
 pointBtn.addEventListener(`click` , appendPoint);
 function appendPoint() {
@@ -69,6 +70,7 @@ function appendPoint() {
     currentOperand.textContent += `0`
     if (currentOperand.textContent.includes('.')) return
     currentOperand.textContent += `.`
+    
 }
 equalBtn.addEventListener("click" , evaluate);
 function evaluate() {
@@ -81,6 +83,7 @@ function evaluate() {
     currentOperand.textContent =operate(firstNumber, currentOperation, secNumber);
     previousOperand.textContent = `${firstNumber} ${currentOperation} ${secNumber} = `
     currentOperation = null
+    
 }
 deleteBtn.addEventListener(`click`, deleteNumber);
 function deleteNumber(){
